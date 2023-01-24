@@ -21,26 +21,31 @@
     animation: opacityOn 2.5s;
 }
 .containerInput{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #DA0037;
     padding: 15px;
     margin: 34px 0;
     display: flex;
-    box-shadow: 1px 3px 8px rgba(0,0,0,.5);
     animation: opacityOn 2.5s;
+    transition: all 1s ease;
+    box-shadow: inset 0 0 15px #000;
 }
 
 .containerInput input {
     width: 100%;
     background-color: transparent;
     border: 0;
-    font-size: 20px;
+    font-size: 16px;
     outline: none;
     color: #FFF;
-    margin-right: 8PX;
-    transition: all .5s ease;
+    margin-right: 8px;
+    font-weight: 700;
+    letter-spacing: .5px;
 }
 .containerInput:has(input:focus){
-  background-color: rgba(245,245,245, .1);
+  background-color: #000000;
+}
+.containerInput input:focus::placeholder{
+  opacity: .2;
 }
 .containerInput::placeholder{
     color: #f1f1f1;
@@ -85,15 +90,17 @@
     justify-content: left;
     align-items: center;
     padding: 1rem;
-    margin-bottom: .5rem;
     font-weight: bold;
     color: #D9D9D9;
     border-bottom: 1px solid rgba(245,245,245, .1);
     transition: all .5s ease;
 }
+.main span:nth-child(2){
+   border-top: 1px solid rgba(245,245,245, .1);
+}
 .main span:hover{
-  background-color: #D9D9D9;
-  color: #121212;
+  box-shadow: inset 0 0 50px #000;
+  color: #F73859;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

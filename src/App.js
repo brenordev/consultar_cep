@@ -32,7 +32,7 @@ function App() {
       <div className="containerInput">
         <input
           type="number"
-          placeholder="Somente números"
+          placeholder="Digite um CEP"
           value={input}
           maxLength='8'
           onChange={(e) => setInput(e.target.value)}
